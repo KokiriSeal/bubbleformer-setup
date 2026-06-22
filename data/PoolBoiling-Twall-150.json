@@ -1,0 +1,13 @@
+{
+  "inv_reynolds": 0.0043,
+  "cpgas": 0.7997,
+  "mugas": 0.02816,
+  "rhogas": 0.008687,
+  "thcogas": 0.209,
+  "stefan": 1.2221,
+  "prandtl": 7.35,
+  "heater": {
+    "nucWaitTime": 0.4,
+    "wallTemp": 150
+  }
+}

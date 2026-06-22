@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# Jobfiles and logs
+wandb/
+outputs/
+*.sub
+*.out
+*.log
+
+# Pytorch Saved models and Data
+*.pt
+
+# VSCode Workspace
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.virtual_documents
+.ipynb_checkpoints
+
+# Wandb API key
+bubbleformer/config/wandb_api_key.txt
+CLAUDE.md

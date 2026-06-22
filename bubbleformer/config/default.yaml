@@ -1,0 +1,26 @@
+log_dir: /pub/sheikhh1/bubbleformer_logs
+seed: 42
+
+expt: # forecast, temp_prediction, bulk_flow
+
+nodes:
+devices:
+
+max_epochs:
+batch_size:
+
+checkpoint_path:
+
+use_wandb: True
+wandb_tags:
+  - time_window-5
+  - relative_l2_loss
+  - FiLM-AViT-Small
+  - Single_Bubble
+  - Lion_optimizer
+defaults:
+  - _self_
+  - data_cfg: singlebubble
+  - model_cfg: film_avit_small
+  - optim_cfg: lion
+  - scheduler_cfg: cosine_warmup
