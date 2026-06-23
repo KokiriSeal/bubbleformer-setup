@@ -109,8 +109,11 @@ You want `True` and your GPU name printed.
 uv pip install "huggingface_hub[cli]"
 
 # download ONLY the checkpoint you need (the full repo is large)
-huggingface-cli download hpcforge/Bubbleformer CKPT --local-dir ./weights
+hf download hpcforge/Bubbleformer CKPT --local-dir ./weights
 ```
+
+> **Note:** the CLI is now `hf` — the old `huggingface-cli` command is deprecated and no longer
+> works. The `hf` command is provided by the `huggingface_hub[cli]` package installed above.
 
 This puts the file at `./weights/CKPT`. Browse the list at
 <https://huggingface.co/hpcforge/Bubbleformer/tree/main>.
