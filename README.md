@@ -1,5 +1,18 @@
 # Bubbleformer
 
+> ⚠️ **Attribution / disclaimer:** **Bubbleformer is *not* my work.** It was created by
+> **HPCForge** and accepted to NeurIPS 2025 (see citation and links below). This repository is an
+> unofficial **mirror with a setup/troubleshooting guide** ([`bubbleformersetup.md`](bubbleformersetup.md))
+> that I wrote to help my group run the model on a cloud GPU. All credit for the model, dataset, and
+> original code goes to the original authors. Official sources:
+> [paper](https://neurips.cc/virtual/2025/loc/san-diego/poster/121854) ·
+> [model weights](https://huggingface.co/hpcforge/Bubbleformer) ·
+> [BubbleML 2.0 dataset](https://huggingface.co/datasets/hpcforge/BubbleML_2).
+> Licensed under MIT, © 2025 HPCForge (see [LICENSE](LICENSE)).
+>
+> My only additions are: this disclaimer, `bubbleformersetup.md`, an example fluid-parameters JSON,
+> and small bug-fix edits to `pyproject.toml` / `scripts/inference.py` to get inference running.
+
 **Accepted to NeurIPS 2025 as a Spotlight Paper🏅**
 
 [[Paper]](https://neurips.cc/virtual/2025/loc/san-diego/poster/121854) [[Poster]](media/Poster_NIPS25_Bubbleformer_FINAL.pdf) [[Dataset on Hugging Face (BubbleML 2.0)]](https://huggingface.co/datasets/hpcforge/BubbleML_2)

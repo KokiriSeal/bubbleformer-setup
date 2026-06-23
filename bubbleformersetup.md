@@ -1,5 +1,12 @@
 # Running Bubbleformer on a Lambda Cloud GPU
 
+> ⚠️ **Bubbleformer is not my work.** The model, dataset, and original code were created by
+> **HPCForge** (NeurIPS 2025), MIT licensed —
+> [paper](https://neurips.cc/virtual/2025/loc/san-diego/poster/121854) ·
+> [weights](https://huggingface.co/hpcforge/Bubbleformer) ·
+> [dataset](https://huggingface.co/datasets/hpcforge/BubbleML_2). This document is just a
+> setup/troubleshooting guide I wrote for running their model.
+
 Step-by-step guide for running Bubbleformer inference on a Lambda Cloud GPU instance
 (Linux + CUDA) over SSH. Tested end-to-end on a self-generated `PoolBoiling` dataset with the
 `Bubbleformer-S-PB-Saturated` checkpoint.
