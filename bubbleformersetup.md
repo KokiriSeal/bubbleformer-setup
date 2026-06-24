@@ -32,6 +32,8 @@ Replace these throughout the guide with your own values:
 | `IP`        | `163.192.15.22` | Your instance's IP (from the Lambda dashboard) |
 | `DATA.hdf5` | `PoolBoiling-Twall-150.hdf5` | Your simulation file |
 | `CKPT`      | `Bubbleformer-S-PB-Saturated.ckpt` | The checkpoint that matches your data |
+| `<outputfolder>` | `BubbleFormerOutput` | The local output folder for bubbleformer's output files|
+| `<run#>` | `run2` | The number run or any arbitrary name representing the run |
 
 > **Tip on commands:** when a command is shown split across lines with `\` at the end, you can always
 > paste it as **one long line instead**. Stray `\` characters mid-line (from a bad copy-paste) are a
@@ -235,8 +237,8 @@ repeating until the data runs out. Then it writes to `./outputs/run1/`:
 Run **on your Mac**, as **one line**, full paths (no `~`, no stray `\`):
 
 ```bash
-scp -i KEY -r ubuntu@IP:/home/ubuntu/Bubbleformer-main/outputs/run1 /Users/you/Downloads/
-open /Users/you/Downloads/run1
+scp -i KEY -r ubuntu@IP:/home/ubuntu/Bubbleformer-main/outputs/run1 /Users/you/Downloads/<outputfolder>/<run#>
+open /Users/you/Downloads/<outputfolder>/<run#>
 ```
 
 Start with `plots/0000.png` (label vs. prediction side by side).
